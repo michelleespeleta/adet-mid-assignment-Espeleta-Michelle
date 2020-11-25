@@ -1,0 +1,194 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #001131;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #001131;
+    border-color: #001131;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #001131;
+    border-color: #001131;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #001131;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #001131;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem #E4BF3F;
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    width: 100%;
+    background: #FEDBC4;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+/* Tasks */
+.task-card {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    padding: 10px;
+}
+
+.task-card--header {
+    background: #E4BF3F;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+    .task-card--header h3 {
+        margin: 10px;
+    }
+
+.button-submit {
+    margin-left: 15px;
+    margin-right: 15px;
+    background: #001131;
+    color: #E4BF3F;
+    padding: 8px;
+    font-weight: bold;
+    border: solid 1px #001131;
+    border-radius: 10px;
+}
+
+    .button-submit:hover {
+        text-decoration: none;
+        color: #E4BF3F;
+    }
+
+
+.button-create {
+    margin-left: 30.5rem;
+    margin-right: 15px;
+    color: #E4BF3F;
+    padding: 8px;
+    font-weight: bold;
+}
+
+    .button-create:hover {
+        text-decoration: underline;
+        color: #001131;
+    }
+
+.task-card--details {
+    width: 100%;
+    padding: 30px 0;
+    border: solid 2px #E4BF3F;
+    color: #001131;
+}
+
+.hidden {
+    display: none;
+}
+
+.task-card--details span,
+.task-card--details p {
+    margin: 10px;
+}
+
+/*Navbar*/
+.header {
+    background: #E4BF3F;
+}
+
+.name {
+    color: #E4BF3F;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+    letter-spacing: 1.4px;
+}
+
+    .name:hover {
+        text-decoration: none;
+        color: #001131;
+    }
+
+.nav-link:hover {
+    transform: scale(1.1);
+}
+
+.infoname {
+    color: #001131;
+}
+
+.infoinput {
+    color: #001131;
+    width: 300px;
+    height: 30px;
+}
+
+.infodesc {
+    color: #001131;
+    width: 300px;
+    height: 150px;
+}
+
+/*Scroll*/
+::-webkit-scrollbar {
+    width: 11px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #001131;
+}

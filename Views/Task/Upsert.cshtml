@@ -1,0 +1,25 @@
+﻿@model adet_mid_assignment_Espeleta_Michelle.Models.TaskModel
+
+@{
+    ViewData["Title"] = "Create Task";
+}
+
+<br />
+<h1>@(Model.Id != 0 ? "Edit" : "Create New") Task</h1>
+
+<form method="post" id="upsertTask">
+    @if (Model.Id != 0)
+    {
+<input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="DateCreated" />
+                                <input type="hidden" asp-for="State" />}
+<br><label class="infoname" asp-for="Name"></label><br>
+    <input class="infoinput" name="taskName" /><br><br>
+    <label class="infoname" asp-for="TaskDescription"></label><br>
+    <textarea class="infodesc" name="taskDescription" form="upsertTask"></textarea><br><br>
+    <button class="button-submit" type="submit">@(Model.Id != 0 ? "Edit" : "Create Task")</button>
+    <a asp-action="Index" class="button-submit">Back To Tasks</a>
+</form>
+
+
+
